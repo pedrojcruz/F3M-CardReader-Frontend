@@ -14,11 +14,37 @@ defineProps<{
           Rua
         </label>
 
-        <input
-          :value="address.street"
-          readonly
-          class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none"
-        >
+        <input :value="address.street" readonly
+          class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
+      </div>
+
+      <div class="grid grid-cols-3 gap-2">
+        <div class="space-y-1">
+          <label class="text-xs font-medium text-slate-600">
+            Número da porta
+          </label>
+
+          <input :value="address.doorNumber" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
+        </div>
+
+        <div class="space-y-1">
+          <label class="text-xs font-medium text-slate-600">
+            Andar
+          </label>
+
+          <input :value="address.floor" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
+        </div>
+
+        <div class="space-y-1">
+          <label class="text-xs font-medium text-slate-600">
+            Lado
+          </label>
+
+          <input :value="address.side" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
+        </div>
       </div>
 
       <div class="grid grid-cols-2 gap-2">
@@ -27,11 +53,8 @@ defineProps<{
             Código postal
           </label>
 
-          <input
-            :value="address.postalCode"
-            readonly
-            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none"
-          >
+          <input :value="address.postalCode" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
         </div>
 
         <div class="space-y-1">
@@ -39,11 +62,8 @@ defineProps<{
             Cidade
           </label>
 
-          <input
-            :value="address.city"
-            readonly
-            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none"
-          >
+          <input :value="address.city" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
         </div>
       </div>
 
@@ -53,11 +73,8 @@ defineProps<{
             Distrito
           </label>
 
-          <input
-            :value="address.district"
-            readonly
-            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none"
-          >
+          <input :value="address.district" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
         </div>
 
         <div class="space-y-1">
@@ -65,11 +82,8 @@ defineProps<{
             Município
           </label>
 
-          <input
-            :value="address.municipality"
-            readonly
-            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none"
-          >
+          <input :value="address.municipality" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
         </div>
       </div>
 
@@ -79,11 +93,8 @@ defineProps<{
             Freguesia
           </label>
 
-          <input
-            :value="address.parish"
-            readonly
-            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none"
-          >
+          <input :value="address.parish" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
         </div>
 
         <div class="space-y-1">
@@ -91,11 +102,8 @@ defineProps<{
             País
           </label>
 
-          <input
-            :value="address.country"
-            readonly
-            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none"
-          >
+          <input :value="address.country" readonly
+            class="h-9 w-full rounded-md border border-slate-300 bg-white px-2.5 text-sm text-slate-950 outline-none">
         </div>
       </div>
     </div>
